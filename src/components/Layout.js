@@ -9,7 +9,7 @@ export default class BaseLayout extends React.Component {
           <ul>
             <NavLink exact to="/">Blogger</NavLink>
             <NavLink to="/create">Create a Post</NavLink>
-            <NavLink to="/list">Show Posts</NavLink>
+            <NavLink to="/show">Show Posts</NavLink>
           </ul>
         </nav>
         {this.props.children}

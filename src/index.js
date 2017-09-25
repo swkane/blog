@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BaseLayout from './components/Layout';
 import CreatePost from './components/CreatePost';
 import PostList from './components/PostList';
+import ShowPost from './components/ShowPost';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,7 +15,8 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/create" component={CreatePost} />
-        <Route path="/list" component={PostList} />
+        <Route path="/show/:_id" component={ShowPost} />
+        <Route path="/show" component={PostList} />
       </Switch>
     </BaseLayout>
   </BrowserRouter>
