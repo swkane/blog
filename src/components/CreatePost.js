@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default class CreatePost extends React.Component {
   state = {
@@ -48,7 +49,7 @@ export default class CreatePost extends React.Component {
           <input onChange={this.handleTitle} value={this.state.blogTitle} name='blogTitle' />
           <label>Blog Entry</label>
           <input onChange={this.handleEntry} value={this.state.blogEntry} name='blogEntry' />
-          <button onClick={this.handleSubmit} type='submit'>Submit</button>
+          <button onClick={this.handleSubmit} type='submit'><Link to='/'>Submit</Link></button>
         </form>
       </div>
     )
